@@ -35,7 +35,7 @@
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item dropdown">
@@ -60,13 +60,13 @@
               <a class="dropdown-item" href="blog-post.html">Blog Post</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Other Pages
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+              <a class="dropdown-item active" href="sidebar.html">Sidebar Page</a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
               <a class="dropdown-item" href="404.html">404</a>
               <a class="dropdown-item" href="pricing.html">Pricing Table</a>
@@ -81,7 +81,7 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Contact
+    <h1 class="mt-4 mb-3">Sidebar Page
       <small>Subheading</small>
     </h1>
 
@@ -89,76 +89,38 @@
       <li class="breadcrumb-item">
         <a href="index.html">Home</a>
       </li>
-      <li class="breadcrumb-item active">Contact</li>
+      <li class="breadcrumb-item active">About</li>
     </ol>
 
     <!-- Content Row -->
     <div class="row">
-      <!-- Map Column -->
-      <div class="col-lg-8 mb-4">
-        <!-- Embedded Google Map -->
-        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+      <!-- Sidebar Column -->
+      <div class="col-lg-3 mb-4">
+        <div class="list-group">
+          <a href="index.html" class="list-group-item">Home</a>
+          <a href="about.html" class="list-group-item">About</a>
+          <a href="services.html" class="list-group-item">Services</a>
+          <a href="contact.html" class="list-group-item">Contact</a>
+          <a href="portfolio-1-col.html" class="list-group-item">1 Column Portfolio</a>
+          <a href="portfolio-2-col.html" class="list-group-item">2 Column Portfolio</a>
+          <a href="portfolio-3-col.html" class="list-group-item">3 Column Portfolio</a>
+          <a href="portfolio-4-col.html" class="list-group-item">4 Column Portfolio</a>
+          <a href="portfolio-item.html" class="list-group-item">Single Portfolio Item</a>
+          <a href="blog-home-1.html" class="list-group-item">Blog Home 1</a>
+          <a href="blog-home-2.html" class="list-group-item">Blog Home 2</a>
+          <a href="blog-post.html" class="list-group-item">Blog Post</a>
+          <a href="full-width.html" class="list-group-item">Full Width Page</a>
+          <a href="sidebar.html" class="list-group-item active">Sidebar Page</a>
+          <a href="faq.html" class="list-group-item">FAQ</a>
+          <a href="404.html" class="list-group-item">404</a>
+          <a href="pricing.html" class="list-group-item">Pricing Table</a>
+        </div>
       </div>
-      <!-- Contact Details Column -->
-      <div class="col-lg-4 mb-4">
-        <h3>Contact Details</h3>
-        <p>
-          3481 Melrose Place
-          <br>Beverly Hills, CA 90210
-          <br>
-        </p>
-        <p>
-          <abbr title="Phone">P</abbr>: (123) 456-7890
-        </p>
-        <p>
-          <abbr title="Email">E</abbr>:
-          <a href="mailto:name@example.com">name@example.com
-          </a>
-        </p>
-        <p>
-          <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
-        </p>
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4">
+        <h2>Section Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, et temporibus, facere perferendis veniam beatae non debitis, numquam blanditiis necessitatibus vel mollitia dolorum laudantium, voluptate dolores iure maxime ducimus fugit.</p>
       </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Contact Form -->
-    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <div class="row">
-      <div class="col-lg-8 mb-4">
-        <h3>Send us a Message</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Full Name:</label>
-              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-              <p class="help-block"></p>
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Phone Number:</label>
-              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Message:</label>
-              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-            </div>
-          </div>
-          <div id="success"></div>
-          <!-- For success/fail messages -->
-          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-        </form>
-      </div>
-
     </div>
     <!-- /.row -->
 
@@ -176,11 +138,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
 </body>
 
