@@ -32,7 +32,7 @@ if(!isset($_SESSION['user']))
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.php">Veterinarian</a>
+    <a class="navbar-brand" href="home.php">Veterinarian</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -57,7 +57,7 @@ if(!isset($_SESSION['user']))
             <a class="dropdown-item" href="blog-post.php">General Information</a>
           </div>
         </li>
-<<<<<<< HEAD:about.php
+
         <?php
           if($_SESSION['loggedin']==true){
             ?>
