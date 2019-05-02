@@ -80,20 +80,6 @@ if(!isset($_SESSION['user']))
           <?php
           }
             ?>
-=======
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login/Sign Up</a>
-        </li>
-        <li class="nav-item dropdown" id="user_area">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Welcome User
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-            <a class="dropdown-item" href="appoint.html">Book an appointment</a>
-            <a class="dropdown-item" href="logout.html">Logout</a>
-          </div>
-        </li>
->>>>>>> b90d9429effffeed12ddd19c45608b9c55054f9d:about.html
       </ul>
     </div>
   </div>
