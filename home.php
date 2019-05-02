@@ -1,3 +1,12 @@
+<?php
+session_start(); 
+if(!isset($_SESSION['user'])) 
+{ 
+    
+    $_SESSION['loggedin']=false;
+} 
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,41 +36,38 @@
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Veterinarian</a>
+        <a class="navbar-brand" href="home.php">Veterinarian</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="services.php">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Blog
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                        <a class="dropdown-item" href="blog-home-1.html">About Cats</a>
-                        <a class="dropdown-item" href="blog-home-2.html">About Dogs</a>
-                        <a class="dropdown-item" href="blog-post.html">General Information</a>
+                        <a class="dropdown-item" href="blog-home-1.php">About Cats</a>
+                        <a class="dropdown-item" href="blog-home-2.php">About Dogs</a>
+                        <a class="dropdown-item" href="blog-post.php">General Information</a>
                     </div>
-                </li>
-                <li class="nav-item" id="login_area">
-                    <a class="nav-link" href="login.html">Login/Sign Up</a>
                 </li>
                 <li class="nav-item dropdown" id="user_area">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Welcome User
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                        <a class="dropdown-item" href="appoint.html">Book an appointment</a>
-                        <a class="dropdown-item" href="logout.html">Logout</a>
+                        <a class="dropdown-item" href="appoint.php">Book an appointment</a>
+                        <a class="dropdown-item" href="logout.php">Logout</a>
                     </div>
                 </li>
             </ul>
